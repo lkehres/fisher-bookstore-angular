@@ -2,6 +2,14 @@
   Welcome to {{ title }}!
 </h1>
 
-<h2>Here is our Books Component:</h2>
+<app-nav-bar></app-nav-bar>
 
-<app-books></app-books>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/books">Books</a>
+  <a routerLink="/orders">Orders</a>
+</nav>
